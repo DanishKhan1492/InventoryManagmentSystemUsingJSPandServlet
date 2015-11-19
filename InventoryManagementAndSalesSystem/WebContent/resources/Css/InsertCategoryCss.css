@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+#continer {
+	width: 100%;
+}
+
+#categoryDetails {
+	height: 200px;
+	margin-top: 10px;
+	margin-left: 300px;
+}
+
+select {
+	background:
+		url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>");
+	background-color: #3498DB;
+	background-repeat: no-repeat;
+	background-position: right 10px top 15px;
+	background-size: 16px 16px;
+	color: white;
+	padding: 9px;
+	width: 100%;
+	font-family: arial, tahoma;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	width: 300px;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-appearance: none;
+	border: 0;
+	outline: 0;
+	-webkit-transition: 0.3s ease all;
+	-moz-transition: 0.3s ease all;
+	-ms-transition: 0.3s ease all;
+	-o-transition: 0.3s ease all;
+	transition: 0.3s ease all;
+}
+
+#blue {
+	background-color: #3498DB;
+}
+
+#blue:hover {
+	background-color: #2980B9;
+}
+#categoryTable{
+	margin-top:25px;
+	margin-left: 350px;
+}
+.catTable {
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 115%;
+	width: auto;
+	overflow: auto;
+	display: block;
+}
+
+.catTable th {
+	background-color: rgb(112, 196, 105);
+	font-weight: normal;
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.catTable td {
+	background-color: rgb(238, 238, 238);
+	padding: 10px 10px;
+	color: rgb(111, 111, 111);
+}

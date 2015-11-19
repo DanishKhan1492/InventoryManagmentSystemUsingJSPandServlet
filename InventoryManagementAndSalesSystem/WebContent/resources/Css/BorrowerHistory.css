@@ -1,0 +1,30 @@
+#borrowerContainer{
+	margin-left: 300px;
+}
+#borrowerTable {
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+.table {
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 115%;
+	width: auto;
+	overflow: auto;
+	display: block;
+}
+
+.table th {
+	background-color: rgb(112, 196, 105);
+	font-weight: normal;
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.table td {
+	background-color: rgb(238, 238, 238);
+	padding: 10px 10px;
+	color: rgb(111, 111, 111);
+}

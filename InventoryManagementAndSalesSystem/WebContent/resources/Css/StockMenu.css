@@ -1,0 +1,36 @@
+@charset "UTF-8";
+#continer{
+	width:100%;
+}
+#options{
+	width:99%;
+	margin-top: 10px;
+	margin-left: 130px;
+}
+a{
+	text-decoration: none;
+	text-align:center;
+}
+.menubutton {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float: left;
+	text-align:center;
+	color: white;
+	width: 12%;
+	border: #fbfbfb solid 4px;
+	cursor: pointer;
+	background-color: #3498db;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+
+.menubutton:hover {
+	background-color: rgba(0, 0, 0, 0);
+	color: #0493bd;
+}

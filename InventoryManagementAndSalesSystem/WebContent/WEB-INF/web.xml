@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>InventoryManagementAndSalesSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	
+	<!-- Servlets Configurations are defined Below -->
+	
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>app.IMAS.Controllers.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/loginPage</url-pattern>
+		<url-pattern>/login</url-pattern>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<!-- First Controller End Here -->
+	<servlet>
+		<servlet-name>ChangePasswordController</servlet-name>
+		<servlet-class>app.IMAS.Controllers.ChangePasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePasswordController</servlet-name>
+		<url-pattern>/changePassword</url-pattern>
+		
+	</servlet-mapping>
+	
+	<!-- Second Controller End Here -->
+
+	<servlet>
+		<servlet-name>MainForm</servlet-name>
+		<servlet-class>app.IMAS.Controllers.MainFormController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MainForm</servlet-name>
+		<url-pattern>/mainForm</url-pattern>
+		<url-pattern>/stockPage</url-pattern>
+		<url-pattern>/borrowerPage</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Third Controller End Here -->
+
+	<servlet>
+		<servlet-name>InsertCategory</servlet-name>
+		<servlet-class>app.IMAS.Controllers.CategoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertCategory</servlet-name>
+		<url-pattern>/insertCategoryPage</url-pattern>
+		<url-pattern>/insertCategory</url-pattern>
+	</servlet-mapping>
+
+	<!-- Fourth Controller End Here -->
+
+	<servlet>
+		<servlet-name>InsertItem</servlet-name>
+		<servlet-class>app.IMAS.Controllers.InsertItemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertItem</servlet-name>
+		<url-pattern>/insertItemPage</url-pattern>
+		<url-pattern>/insertItem</url-pattern>
+	</servlet-mapping>
+
+	<!-- Fifth Controller End Here -->
+
+	<servlet>
+		<servlet-name>UpdateItem</servlet-name>
+		<servlet-class>app.IMAS.Controllers.UpdateItemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateItem</servlet-name>
+		<url-pattern>/updateItemPage</url-pattern>
+		<url-pattern>/updateItem</url-pattern>
+	</servlet-mapping>
+
+	<!-- Sixth Controller End Here -->
+
+	<servlet>
+		<servlet-name>DeleteItem</servlet-name>
+		<servlet-class>app.IMAS.Controllers.DeleteItemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteItem</servlet-name>
+		<url-pattern>/deleteItem</url-pattern>
+	</servlet-mapping>
+
+	<!-- Seventh Controller End Here -->
+
+
+	<servlet>
+		<servlet-name>DeleteCategory</servlet-name>
+		<servlet-class>app.IMAS.Controllers.DeleteCategoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCategory</servlet-name>
+		<url-pattern>/deleteCategory</url-pattern>
+	</servlet-mapping>
+	<!-- Eight Controller End Here -->
+	
+	<servlet>
+		<servlet-name>SearchItem</servlet-name>
+		<servlet-class>app.IMAS.Controllers.SearchItemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchItem</servlet-name>
+		<url-pattern>/searchItemPage</url-pattern>
+		<url-pattern>/searchItem</url-pattern>
+	</servlet-mapping>
+	<!-- Ninth Controller End Here -->
+	
+	<servlet>
+		<servlet-name>ShowPrices</servlet-name>
+		<servlet-class>app.IMAS.Controllers.PriceChangeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowPrices</servlet-name>
+		<url-pattern>/itemPricePage</url-pattern>
+		<url-pattern>/searchItemPrice</url-pattern>
+	</servlet-mapping>
+	<!-- Tenth Controller End Here -->
+	
+	<servlet>
+		<servlet-name>AddBorrower</servlet-name>
+		<servlet-class>app.IMAS.Controllers.AddBorrowerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddBorrower</servlet-name>
+		<url-pattern>/addBorrowerPage</url-pattern>
+		<url-pattern>/addBorrower</url-pattern>
+	</servlet-mapping>
+	<!-- Eleventh Controller End Here -->
+	
+	<servlet>
+		<servlet-name>UpdateBorrower</servlet-name>
+		<servlet-class>app.IMAS.Controllers.UpdateBorrowerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateBorrower</servlet-name>
+		<url-pattern>/updateBorrowerPage</url-pattern>
+		<url-pattern>/updateBorrower</url-pattern>
+	</servlet-mapping>
+	<!-- 12th Controller End Here -->
+	
+	<servlet>
+		<servlet-name>SearchBorrower</servlet-name>
+		<servlet-class>app.IMAS.Controllers.SearchBorrowerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchBorrower</servlet-name>
+		<url-pattern>/searchBorrowerPage</url-pattern>
+		<url-pattern>/searchBorrower</url-pattern>
+	</servlet-mapping>
+	<!-- 13th Controller End Here -->
+	<servlet>
+		<servlet-name>DeleteBorrower</servlet-name>
+		<servlet-class>app.IMAS.Controllers.DeleteBorrowerController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteBorrower</servlet-name>
+		<url-pattern>/deleteBorrower</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 14th Controller End Here -->
+	
+	<servlet>
+		<servlet-name>PayAmount</servlet-name>
+		<servlet-class>app.IMAS.Controllers.PayAmountController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PayAmount</servlet-name>
+		<url-pattern>/payAmountPage</url-pattern>
+		<url-pattern>/payAmount</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 15th Controller End Here -->
+	
+	<servlet>
+		<servlet-name>BorrowerHistory</servlet-name>
+		<servlet-class>app.IMAS.Controllers.BorrowerHistoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BorrowerHistory</servlet-name>
+		<url-pattern>/showHistoryPage</url-pattern>
+		<url-pattern>/showHistory</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 16th Controller End Here -->
+	
+	<servlet>
+		<servlet-name>Billing</servlet-name>
+		<servlet-class>app.IMAS.Controllers.BillingController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Billing</servlet-name>
+		<url-pattern>/createBillPage</url-pattern>
+		<url-pattern>/createBill</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 17th Controller End Here -->
+	<servlet>
+		<servlet-name>InsertBillItems</servlet-name>
+		<servlet-class>app.IMAS.Controllers.InsertBillItemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertBillItems</servlet-name>
+		<url-pattern>/insertBillItems</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 18th Controller End Here -->
+	
+	<servlet>
+		<servlet-name>PopulateBillItems</servlet-name>
+		<servlet-class>app.IMAS.Controllers.PopulateBillItemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PopulateBillItems</servlet-name>
+		<url-pattern>/populateBillItems</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 19th Controller End Here -->
+	
+	<servlet>
+		<servlet-name>PopulateBillId</servlet-name>
+		<servlet-class>app.IMAS.Controllers.PopulateBillIdController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PopulateBillId</servlet-name>
+		<url-pattern>/populateBillId</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 20th Controller End Here -->
+	
+	<servlet>
+		<servlet-name>UpdateAndDeleteBillItems</servlet-name>
+		<servlet-class>app.IMAS.Controllers.UpAndDelBillItemController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateAndDeleteBillItems</servlet-name>
+		<url-pattern>/updateBillItemsPage</url-pattern>
+		<url-pattern>/deleteBillItems</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 21th Controller End Here -->
+	
+</web-app>
